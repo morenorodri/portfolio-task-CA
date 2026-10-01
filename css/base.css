@@ -1,0 +1,79 @@
+:root {
+    /* color theme */
+    
+
+
+}
+
+
+
+/*** 2. RESET ***/
+* {
+/* removes spaces that are already present on a newly opened web page */
+margin:     0;
+padding:    0;
+
+/* returns the actual content size, including padding, border, margin and etc */
+box-sizing: border-box;
+}
+
+/* removes the dot that comes with the list item by default */
+li, summary { list-style-type: none; }
+
+/* the images on the site is always wide as the parent-element */
+img { max-width: 100%; object-fit: cover; }
+
+/* removes the underline, which is the default. */
+a { text-decoration: none; }
+
+
+
+/*** 3. ELEMENT ***/
+/* knowledge from the class */ /*
+html {
+    font-size: 62.5%; 1rem = 10px
+} 
+*/
+
+
+
+body {
+        /* standard font pack for the whole project */
+        font-family:        "Poppins", sans-serif;
+        font-size:          1rem;
+        font-weight:        300;
+        line-height:        1;
+        background-color:   #ffffff;
+}
+
+
+
+/*** 4. SHARED BLOCK ***/
+
+
+
+
+/*** 5. FEATURING ***/
+
+
+
+
+/*** 6. RESPONSIVE ***/
+/* laptop */
+@media only screen and (max-width: 64rem) {
+
+}
+
+
+/* tablet */
+@media only screen and (max-width: 48rem) {
+
+}
+
+
+/* ignore mobile */ 
+    /* 
+@media only screen and (max-width: 26.5625rem) {
+
+} 
+    */

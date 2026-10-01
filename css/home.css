@@ -1,0 +1,74 @@
+/*** 4. BLOCK ***/
+    main {
+
+        .main-display {
+            height: 100%;
+                background-color: var(--surface);
+        }
+
+        .display-wrapper {
+            display: flex;
+            flex-direction: row;
+            column-gap: 2rem;
+            align-items: center;
+            max-width: 64rem; height: 100%;
+            margin: 0 auto;
+        }
+
+    }
+
+
+
+/*** 5. FEATURING ***/
+/* headline */
+h1 {
+        font-size: clamp(1rem, 8vw, 2.75rem);
+        font-weight: 800;
+        line-height: 1.25;
+        color: var(--t-txt);
+}
+
+/* image */
+.dplay-frame {
+    display: flex;
+    border: clamp(.75rem, 2vw, 1rem) solid var(--pic-fr);
+    border-radius: 50%;
+    width: clamp(14rem, 20vw, 16rem);
+}
+
+
+
+
+/*** 6. RESPONSIVE ***/
+/* laptop */
+@media only screen and (max-width: 64rem) {
+    
+    main {
+
+        .display-wrapper {
+            padding-left: clamp(.5rem, 5vw, 5rem);
+            padding-right: clamp(.5rem, 5vw, 5rem);
+        }
+
+    }
+
+}
+
+
+/* tablet */
+@media only screen and (max-width: 48rem) {
+    main {
+
+        .display-wrapper {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 26.5625rem) {
+
+}
