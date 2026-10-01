@@ -81,9 +81,12 @@ header {
     }
 
 
-    nav {
+    #drop-menu {
+        border: none;
+        width: 100%;
+        top: 4rem;
             background-color: var(--nav-menu);
-    }
+        }
 
 
     .nav-social-list {
