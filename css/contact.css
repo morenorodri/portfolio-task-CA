@@ -1,0 +1,51 @@
+/*** 4. BLOCK ***/
+main {
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+    }
+
+}
+
+
+
+/*** 5. FEATURING ***/
+/* title */
+.contact-title {
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 1.25;
+            color: var(--contact-title);
+}
+
+/* paragraph */
+.contact-p {
+        font-weight: 500;
+        color: var(--contact-p);
+
+}
+
+
+
+/*** 6. RESPONSIVE ***/
+/* laptop */
+@media only screen and (max-width: 64rem) {
+
+}
+
+
+/* tablet */
+@media only screen and (max-width: 48rem) {
+
+}
+
+
+/* mobile */
+@media only screen and (max-width: 26.5625rem) {
+
+}
