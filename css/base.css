@@ -127,7 +127,12 @@ footer {
         line-height: 1.25;
         text-align: center;
         color: var(--foot-p);
+
+    span {
+        display: block;
+    }
 }
+
 
 
 /* link */
