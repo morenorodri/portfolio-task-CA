@@ -14,14 +14,23 @@
     --home-titel:   #42446E;
     --pic-frame:    #E70FAA;
 
-    /* contact */
-    --contact-title: #42446E;
-    --contact-p:     #E70FAA;
-
     /* tech */
     --tech-title:   #42446E;
     --tech-p:       #E70FAA;
     --tech-bframe:  #F5F5F5;
+
+    /* projects */
+    --project-title:#42446E;
+    --project-p:    #E70FAA;
+    --project-card: #F5F5F5;
+    --pr-card-title:#000000;
+    --pr-card-p:    #666666;
+    --pr-card-foot: #666666;
+    --pr-card-link: #000000;
+
+    /* contact */
+    --contact-title: #42446E;
+    --contact-p:     #E70FAA;
 
 }
 
@@ -132,7 +141,7 @@ footer {
         text-align: center;
         color: var(--foot-p);
 
-    span {
+    .span-br {
         display: block;
     }
 }

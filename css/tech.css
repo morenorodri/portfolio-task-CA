@@ -13,7 +13,7 @@ main {
     article {
         display: flex;
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: .5rem;
     }
 
     .tech-list {
@@ -44,9 +44,8 @@ main {
 /*** 5. FEATURING ***/
 /* title */
 .tech-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 800;
-        line-height: 1.25;
             text-align: center;
             color: var(--contact-title);
 }
@@ -54,13 +53,9 @@ main {
 /* paragraph */
 .tech-p {
         font-weight: 500;
+        line-height: 1.25;
         text-align: center;
         color: var(--contact-p);
-
-}
-
-/* image */
-.tech-content li img {
 
 }
 
