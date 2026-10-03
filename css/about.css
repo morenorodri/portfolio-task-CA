@@ -1,0 +1,130 @@
+/*** 4. BLOCK ***/
+main {
+    padding: 4rem 0;
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4em;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+
+
+/*** 5. FEATURING ***/
+/* title */
+.about-title, h2 {
+    padding: 0 .5rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+            color: var(--about-title);
+}
+
+/* paragraph */
+.about-p {
+    padding: 0 .5rem;
+        font-weight: 500;
+        line-height: 1.25;
+        color: var(--contact-p);
+
+}
+
+.task-list {
+    padding-top: 1rem;
+        background-color: var(--about-list);
+
+    .task {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    
+    summary {
+        display: flex;
+        flex-direction: column;
+        row-gap: .25rem;
+    }
+
+    .task-top {
+        display: flex;
+        flex-direction: column;
+        row-gap: .25rem;
+        padding: 0 .5rem;
+
+        .task-title {
+                font-weight: 500;
+                color: var(--ab-list-titel);
+        }
+
+        .task-period {
+            padding: .5rem .75rem;
+            border-radius: .25rem;
+            width: fit-content;
+                font-weight: 400;
+                color: var(--ab-list-boxp);
+                background-color: var(--ab-list-box);
+        }
+    }
+
+    .task-details {
+        display: flex;
+        flex-direction: column;
+        row-gap: .25rem;
+        padding: 0 .5rem;
+    }
+
+    .task-adress {
+        display: flex;
+        flex-direction: column;
+        row-gap: .25rem;
+
+        span {
+                color: var(--ab-list-ps);
+        }
+    }
+
+    .task-date {
+            color: var(--ab-list-ps);
+    }
+
+    .task-info {
+        padding: 0 1rem;
+            font-weight: 400;
+            line-height: 1.25;
+            color: var(--ab-list-p);
+    }
+}
+
+
+
+
+
+/*** 6. RESPONSIVE ***/
+/* laptop */
+@media only screen and (max-width: 64rem) {
+
+}
+
+
+/* tablet */
+@media only screen and (max-width: 48rem) {
+
+}
+
+
+/* mobile */
+@media only screen and (max-width: 26.5625rem) {
+
+}

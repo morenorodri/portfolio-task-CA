@@ -18,20 +18,14 @@ main {
 
     .tech-list {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         padding: 0 .5rem;
-
-        .tech-content {
-            display: flex;
-            gap: .5rem;
-            flex-wrap: wrap;
-            
-        }
+        flex-wrap: wrap;
     
         li {
             display: flex;
             padding: .25rem;
-            width: 4.25rem; height: 4.25rem;
+            width: 4.75rem; height: 4.75rem;
                 background-color: var(--tech-bframe); 
             
         }

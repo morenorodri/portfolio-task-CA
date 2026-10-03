@@ -1,7 +1,5 @@
 /*** 4. BLOCK ***/
 main {
-    display: flex;
-    flex-direction: column;
     padding: 4rem 0;
 
     .project-container {

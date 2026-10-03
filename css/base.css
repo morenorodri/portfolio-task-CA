@@ -14,6 +14,16 @@
     --home-titel:   #42446E;
     --pic-frame:    #E70FAA;
 
+    /* about */
+    --about-title:  #42446E;
+    --about-p:      #E70FAA;
+    --about-list:   #F5F5F5;
+    --ab-list-titel:#666666;
+    --ab-list-p:    #666666;
+    --ab-list-ps:   #A7A7A7;
+    --ab-list-box:  #D7FFE0;
+    --ab-list-boxp: #018C0F;
+
     /* tech */
     --tech-title:   #42446E;
     --tech-p:       #E70FAA;
@@ -141,7 +151,7 @@ footer {
         text-align: center;
         color: var(--foot-p);
 
-    .span-br {
+    .br {
         display: block;
     }
 }
@@ -176,14 +186,16 @@ footer {
 
 /* buttons/img */
 .header-toggle-box button {
+    display: flex;
     padding: .25rem;
     border: none;
     border-radius: 50%;
-    max-width: 2rem; max-height: 2rem;
+
         background-color: var(--nav-button);
 
     img {
         aspect-ratio: 1/1;
+        max-width: 2rem; max-height: 2rem;
     }
 }
 
