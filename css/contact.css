@@ -1,5 +1,6 @@
 /*** 4. BLOCK ***/
 main {
+    padding: 4rem 0;
 
     .contact-content {
         display: flex;
@@ -20,7 +21,7 @@ main {
 .contact-title {
         font-size: 1rem;
         font-weight: 800;
-        line-height: 1.25;
+        line-height: 1.5;
             color: var(--contact-title);
 }
 
@@ -36,7 +37,13 @@ main {
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (min-width: 64rem) {
+    main {
 
+        .project-container {
+            width: min(75%, 64rem);
+        }
+
+    }
 }
 
 

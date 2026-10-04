@@ -14,6 +14,7 @@ main {
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
+        padding: 0 .5rem;
         max-width: 40rem;
     }
 
@@ -22,6 +23,10 @@ main {
         flex-direction: column;
         row-gap: 1rem;
         max-width: 40rem;
+
+        h2 {
+            padding: 0 .5rem;
+        }
     }
 }
 
@@ -30,17 +35,15 @@ main {
 /*** 5. FEATURING ***/
 /* title */
 .about-title, h2 {
-    padding: 0 .5rem;
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
         font-weight: 800;
             color: var(--about-title);
 }
 
 /* paragraph */
 .about-p {
-    padding: 0 .5rem;
         font-weight: 500;
-        line-height: 1.25;
+        line-height: 1.5;
         color: var(--contact-p);
 
 }
@@ -48,6 +51,7 @@ main {
 /* list */
 .task-list {
     padding-top: 1rem;
+    border-radius: .5rem;
         background-color: var(--about-list);
 
     .task {
@@ -69,7 +73,8 @@ main {
         padding: 0 .5rem;
 
         .task-title {
-                font-weight: 500;
+                font-size: clamp(1.25rem, 3vw, 1.5rem);
+                font-weight: 600;
                 color: var(--ab-list-titel);
         }
 
@@ -77,6 +82,7 @@ main {
             padding: .5rem .75rem;
             border-radius: .25rem;
             width: fit-content;
+                font-size: 1rem;
                 font-weight: 400;
                 color: var(--ab-list-boxp);
                 background-color: var(--ab-list-box);
@@ -105,9 +111,9 @@ main {
     }
 
     .task-info {
-        padding: 0 1rem;
+        padding: 0 .5rem;
             font-weight: 400;
-            line-height: 1.25;
+            line-height: 1.5;
             color: var(--ab-list-p);
     }
 }
@@ -119,7 +125,13 @@ main {
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (min-width: 64rem) {
+    main {
 
+        .about-container {
+            width: min(75%, 64rem);
+        }
+
+    }
 }
 
 

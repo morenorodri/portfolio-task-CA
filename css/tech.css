@@ -1,6 +1,6 @@
 /*** 4. BLOCK ***/
 main {
-
+    padding: 4rem 0;
 
     .tech-container {
         display: flex;
@@ -14,7 +14,7 @@ main {
     article {
         display: flex;
         flex-direction: column;
-        row-gap: .5rem;
+        row-gap: 1rem;
         padding: 0 .5rem;
     }
 
@@ -28,7 +28,7 @@ main {
         li {
             display: flex;
             padding: .5rem;
-            width: 4.25rem; height: 4.25rem;
+            width: clamp(4.25rem, 15vw, 8.5rem); 
                 background-color: var(--tech-bframe); 
             
         }
@@ -41,7 +41,7 @@ main {
 /*** 5. FEATURING ***/
 /* title */
 .tech-title {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
         font-weight: 800;
             text-align: center;
             color: var(--contact-title);
@@ -50,7 +50,7 @@ main {
 /* paragraph */
 .tech-p {
         font-weight: 500;
-        line-height: 1.25;
+        line-height: 1.5;
         text-align: center;
         color: var(--contact-p);
 
@@ -61,7 +61,13 @@ main {
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (min-width: 64rem) {
+    main {
 
+        .tech-container {
+            width: min(75%, 64rem);
+        }
+
+    }
 }
 
 

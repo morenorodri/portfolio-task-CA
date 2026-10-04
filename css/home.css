@@ -1,12 +1,14 @@
 /*** 4. BLOCK ***/
 main {
+    padding: 4rem 0;
 
     .home-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 64rem; height: 100%;
+        max-width: 64rem;
+        height: 100%;
         margin: 0 auto;
     }
 
@@ -17,14 +19,10 @@ main {
 /*** 5. FEATURING ***/
 /* title */
 .home-headline {
-        font-size: 1.25rem;
+        font-size: clamp(1.25rem, 5vw, 2.5rem);
         font-weight: 800;
         line-height: 1.25;
             color: var(--home-titel);
-    
-    .span-br {
-        display: block;
-    }
 }
 
 
@@ -32,7 +30,7 @@ main {
 .home-profile {
     border: .5rem solid var(--pic-frame);
     border-radius: 50%;
-    width: 12rem; height: 12rem;
+    width: clamp(12rem, 20vw, 16rem);
 }
 
 
@@ -40,7 +38,13 @@ main {
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (min-width: 64rem) {
+    main {
 
+        .home-container {
+            width: min(75%, 64rem);
+        }
+
+    }
 }
 
 
@@ -50,8 +54,9 @@ main {
 
         .home-container {
             flex-direction: row;
-            column-gap: 1rem;
+            column-gap: 2rem;
         }
+
     }
 }
 

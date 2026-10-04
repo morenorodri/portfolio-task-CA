@@ -103,7 +103,8 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 1rem .5rem;
-            background-color: var(--header-con);
+        max-width: 64rem;
+        margin: 0 auto;
     }
 
 
@@ -137,6 +138,8 @@ footer {
         background-color: var(--foot-con);
 
     .foot-container {
+        max-width: 64rem;
+        margin: 0 auto;
         padding: 2rem .5rem;
     }
 }
@@ -200,7 +203,21 @@ footer {
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (min-width: 64rem) { 
+    header {
 
+        .head-container {
+            width: min(75%, 64rem);
+        }
+
+    }
+
+    footer {
+
+        .foot-container {
+            width: min(75%, 64rem);
+        }
+
+    }
 }
 
 
@@ -209,23 +226,7 @@ footer {
 
 }
 
+/* mobile */
 @media only screen and (min-width: 26.5625rem) {
-    header {
 
-        .head-container {
-            max-width: 64rem;
-            margin: 0 auto;
-        }
-
-    }
-
-    footer {
-        background-color: var(--foot-con);
-
-
-        .foot-container {
-            max-width: 64rem;
-            margin: 0 auto;
-        }
-    }
 } 
