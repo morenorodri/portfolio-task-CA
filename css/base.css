@@ -94,13 +94,14 @@ body {
 
 /*** 4. SHARED BLOCK ***/
 header {
-        background-color: var(--surface);
+        background-color: var(--header-con);
         user-select: none;
 
 
     .head-container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1rem .5rem;
             background-color: var(--header-con);
     }
@@ -135,7 +136,6 @@ header {
 footer {
         background-color: var(--foot-con);
 
-
     .foot-container {
         padding: 2rem .5rem;
     }
@@ -150,10 +150,6 @@ footer {
         line-height: 1.25;
         text-align: center;
         color: var(--foot-p);
-
-    .br {
-        display: block;
-    }
 }
 
 
@@ -203,20 +199,33 @@ footer {
 
 /*** 6. RESPONSIVE ***/
 /* laptop */
-@media only screen and (max-width: 64rem) {
+@media only screen and (min-width: 64rem) { 
 
 }
 
 
 /* tablet */
-@media only screen and (max-width: 48rem) {
+@media only screen and (min-width: 48rem) {
 
 }
 
+@media only screen and (min-width: 26.5625rem) {
+    header {
 
-/* ignore mobile */ 
-    /* 
-@media only screen and (max-width: 26.5625rem) {
+        .head-container {
+            max-width: 64rem;
+            margin: 0 auto;
+        }
 
+    }
+
+    footer {
+        background-color: var(--foot-con);
+
+
+        .foot-container {
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+    }
 } 
-    */

@@ -7,7 +7,8 @@ main {
         row-gap: .5rem;
         justify-content: center;
         align-items: center;
-        height: 100%; 
+        max-width: 64rem; height: 100%;
+        margin: 0 auto; 
     }
 
 }
@@ -34,18 +35,18 @@ main {
 
 /*** 6. RESPONSIVE ***/
 /* laptop */
-@media only screen and (max-width: 64rem) {
+@media only screen and (min-width: 64rem) {
 
 }
 
 
 /* tablet */
-@media only screen and (max-width: 48rem) {
+@media only screen and (min-width: 48rem) {
 
 }
 
 
 /* mobile */
-@media only screen and (max-width: 26.5625rem) {
+@media only screen and (min-width: 26.5625rem) {
 
 }
