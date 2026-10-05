@@ -19,7 +19,7 @@ main {
 /*** 5. FEATURING ***/
 /* title */
 .contact-title {
-        font-size: 1rem;
+        font-size: clamp(1rem, 5vw, 2rem);
         font-weight: 800;
         line-height: 1.5;
             color: var(--contact-title);
@@ -27,6 +27,7 @@ main {
 
 /* paragraph */
 .contact-p {
+        font-size: clamp(1rem, 5vw, 2rem);
         font-weight: 500;
         color: var(--contact-p);
 
@@ -39,7 +40,7 @@ main {
 @media only screen and (min-width: 64rem) {
     main {
 
-        .project-container {
+        .contact-container {
             width: min(75%, 64rem);
         }
 

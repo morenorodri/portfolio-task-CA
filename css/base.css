@@ -3,44 +3,47 @@
     --surface:      #FFFFFF;
 
     /* header/nav */
-    --header-con:   #F5F5F5; 
-    --nav-link:     #666666; 
-    --nav-button:   #666666;
-    --nav-menu:     #F5F5F5;
-    --foot-con:     #F5F5F5;
-    --foot-p:       #666666;
+    --header-con:   #F3F4F6; 
+    --nav-link:     #707080; /* #666666 */
+    --nav-button:   #707080;
+    --nav-menu:     #F3F4F6;
+    --foot-con:     #F3F4F6;
+    --foot-p:       #707080;
 
     /* home */
     --home-titel:   #42446E;
-    --pic-frame:    #E70FAA;
+    --pic-frame:    #076D99; /* #14B2F5  */
 
     /* about */
     --about-title:  #42446E;
-    --about-p:      #E70FAA;
-    --about-list:   #F5F5F5;
-    --ab-list-titel:#666666;
-    --ab-list-p:    #666666;
-    --ab-list-ps:   #A7A7A7;
-    --ab-list-box:  #D7FFE0;
-    --ab-list-boxp: #018C0F;
+    --about-p:      #707080;
+    --about-list:   #F3F4F6;
+    --ab-list-titel:#707080;
+    --ab-list-p:    #F3F4F6; /* #3D3F66 */
+    --ab-list-ps:   #43434D; /* #A7A7A7 */
+    --ab-list-box:  #01660B; /* #D7FFE0 */
+    --ab-list-boxp: #F3F4F6; /* #161627 #018C0F */
+    --ab-list-bdr:  #858599;
+    --ab-task-info: #076D99;
 
     /* tech */
     --tech-title:   #42446E;
-    --tech-p:       #E70FAA;
-    --tech-bframe:  #F5F5F5;
+    --tech-p:       #3D3F66;
+    --tech-bframe:  #F3F4F6;
 
     /* projects */
     --project-title:#42446E;
-    --project-p:    #E70FAA;
-    --project-card: #F5F5F5;
-    --pr-card-title:#000000;
-    --pr-card-p:    #666666;
-    --pr-card-foot: #666666;
-    --pr-card-link: #000000;
+    --project-p:    #3D3F66;
+    --project-card: #F3F4F6;
+    --pr-card-title:#42446E; /* 000000 */
+    --pr-card-p:    #3D3F66;
+    --pr-card-foot: #43434D;
+    --pr-card-link: #42446E;
+    --pr-card-bdr:  #858599;
 
     /* contact */
     --contact-title: #42446E;
-    --contact-p:     #E70FAA;
+    --contact-p:     #087DAF;
 
 }
 
@@ -74,6 +77,10 @@ html {
 } 
 */
 
+
+html {
+    scrollbar-gutter: stable;
+}
 
 
 body {
@@ -189,6 +196,7 @@ footer {
     padding: .25rem;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 
         background-color: var(--nav-button);
 

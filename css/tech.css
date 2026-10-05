@@ -44,7 +44,7 @@ main {
         font-size: clamp(1.5rem, 5vw, 2.5rem);
         font-weight: 800;
             text-align: center;
-            color: var(--contact-title);
+            color: var(--tech-title);
 }
 
 /* paragraph */
@@ -52,7 +52,7 @@ main {
         font-weight: 500;
         line-height: 1.5;
         text-align: center;
-        color: var(--contact-p);
+        color: var(--tech-p);
 
 }
 

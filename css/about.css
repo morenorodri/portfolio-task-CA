@@ -21,10 +21,11 @@ main {
     section {
         display: flex;
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: 2rem;
+        padding: 0 .5rem;
         max-width: 40rem;
 
-        h2 {
+        h1 {
             padding: 0 .5rem;
         }
     }
@@ -44,7 +45,7 @@ main {
 .about-p {
         font-weight: 500;
         line-height: 1.5;
-        color: var(--contact-p);
+        color: var(--about-p);
 
 }
 
@@ -52,6 +53,7 @@ main {
 .task-list {
     padding-top: 1rem;
     border-radius: .5rem;
+    /* border: .1rem solid var(--ab-list-bdr); */
         background-color: var(--about-list);
 
     .task {
@@ -63,14 +65,15 @@ main {
     summary {
         display: flex;
         flex-direction: column;
-        row-gap: .25rem;
+        row-gap: 1rem;
+            cursor: pointer;
     }
 
     .task-top {
         display: flex;
         flex-direction: column;
         row-gap: .25rem;
-        padding: 0 .5rem;
+        padding: 0 1rem;
 
         .task-title {
                 font-size: clamp(1.25rem, 3vw, 1.5rem);
@@ -93,7 +96,7 @@ main {
         display: flex;
         flex-direction: column;
         row-gap: .25rem;
-        padding: 0 .5rem;
+        padding: 0 1rem;
     }
 
     .task-adress {
@@ -102,19 +105,34 @@ main {
         row-gap: .25rem;
 
         span {
+            display: flex;
+            column-gap: .25rem;
+            align-items: center;
                 color: var(--ab-list-ps);
+        }
+
+        img {
+            max-width: 1rem; max-height: 1rem;
         }
     }
 
     .task-date {
+        display: flex;
+        column-gap: .25rem;
+        align-items: center;
             color: var(--ab-list-ps);
+
+        img {
+            max-width: 1rem; max-height: 1rem;
+        }
     }
 
     .task-info {
-        padding: 0 .5rem;
+        padding: 1rem 1rem 1rem;
             font-weight: 400;
             line-height: 1.5;
             color: var(--ab-list-p);
+                background-color: var(--ab-task-info);
     }
 }
 
