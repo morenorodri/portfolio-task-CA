@@ -1,11 +1,12 @@
 /*** 4. BLOCK ***/
 main {
-    padding: 4rem 0;
+    padding: 8rem 0;
+        background-color: var(--surface);
 
     .about-container {
         display: flex;
         flex-direction: column;
-        row-gap: 4em;
+        row-gap: 8em;
         max-width: 64rem;
         margin: 0 auto;
     }
@@ -51,17 +52,22 @@ main {
 
 /* list */
 .task-list {
-    padding-top: 1rem;
-    border-radius: .5rem;
-    /* border: .1rem solid var(--ab-list-bdr); */
-        background-color: var(--about-list);
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
 
     .task {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
+        border-radius: .5rem;
+        overflow: hidden;
+        height: auto;
+            background-color: var(--about-list);
+            
+       animation: showList 3s ease;
     }
-    
+
     summary {
         display: flex;
         flex-direction: column;
@@ -73,7 +79,7 @@ main {
         display: flex;
         flex-direction: column;
         row-gap: .25rem;
-        padding: 0 1rem;
+        padding: 1rem 1rem;
 
         .task-title {
                 font-size: clamp(1.25rem, 3vw, 1.5rem);
@@ -136,8 +142,17 @@ main {
     }
 }
 
+.task:hover {
+    outline: .1rem solid var(--ab-list-bdr);
+    outline-offset: .5rem;
+}
 
-
+@keyframes showList {
+        from {
+            opacity: 0;
+            transform: translatex(12rem);
+        }
+    }
 
 
 /*** 6. RESPONSIVE ***/

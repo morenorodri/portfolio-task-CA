@@ -17,7 +17,8 @@
     <title> Portfolio Task </title>
 </head>
 <body>
-    
+    <input type="checkbox" id="theme-toggle">
+
     <header>
         <div class="head-container">
             <!-- brandname -->
@@ -68,9 +69,9 @@
 
             <!-- toggle buttons -->
             <div class="header-toggle-box">
-                <button aria-label="toggle to dark/light mode">
-                    <img src="./img/icon/moon-light-icon.svg" alt="" aria-hidden="true"> 
-                </button>
+                <label for="theme-toggle" class="toggle-label" aria-label="toggle to dark/light mode">
+                    <!-- <img src="./img/icon/moon-light-icon.svg" alt="" aria-hidden="true">  -->
+                </label>
                 <button class="drop-none" aria-label="toggle to open/close the dropmenu" popovertarget="drop-menu">
                     <img src="./img/icon/menu-light-icon.svg" alt="" aria-hidden="true">
                 </button>
@@ -126,7 +127,7 @@
             <h1 class="home-headline">
                 Hi <span role="img" aria-label="waving hand">👋</span><br class="span-br">
                 My name is <br class="span-br">
-                Winfer Rodri Flor <br class="span-br">
+                <span class="coder"> Winfer Rodri Flor </span> <br class="span-br">
                 I build things for the web
             </h1>
         </div>

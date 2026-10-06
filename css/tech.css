@@ -1,13 +1,13 @@
 /*** 4. BLOCK ***/
 main {
-    padding: 4rem 0;
+    padding: 8rem 0;
+        background-color: var(--surface);
 
     .tech-container {
         display: flex;
         flex-direction: column;
-        row-gap: 4em;
-        justify-content: center;
-        max-width: 64rem; height: 100%;
+        row-gap: 8em;
+        max-width: 64rem; 
         margin: 0 auto;
     }
 
@@ -28,12 +28,20 @@ main {
         li {
             display: flex;
             padding: .5rem;
+            border-radius: .25rem;
             width: clamp(4.25rem, 15vw, 8.5rem); 
                 background-color: var(--tech-bframe); 
             
+            animation: showFrame 3s ease;
         }
     }
     
+}
+
+@keyframes showFrame {
+    0% {
+        opacity: 0;
+    }
 }
 
 

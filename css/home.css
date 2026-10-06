@@ -1,6 +1,7 @@
 /*** 4. BLOCK ***/
 main {
     padding: 4rem 0;
+        background-color: var(--surface);
 
     .home-container {
         display: flex;
@@ -26,11 +27,34 @@ main {
 }
 
 
+/* coder */
+.coder {
+        background: linear-gradient(
+            45deg, #076D99, #009911
+        );
+        background-clip: text;
+        color: transparent;
+
+        animation: showName 3s ease;
+}
+
+@keyframes showName {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+}
+
+
 /* image */
 .home-profile {
-    border: .5rem solid var(--pic-frame);
+    /* border: .5rem solid var(--pic-frame); */
     border-radius: 50%;
     width: clamp(12rem, 20vw, 16rem);
+    padding: clamp(.5rem, 1vw, 1rem);
+    background: linear-gradient(
+        -45deg, #076D99, #009911
+    );    
 }
 
 

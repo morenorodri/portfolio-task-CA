@@ -1,6 +1,7 @@
 /*** 4. BLOCK ***/
 main {
     padding: 4rem 0;
+        background-color: var(--surface);
 
     .contact-content {
         display: flex;
@@ -31,8 +32,21 @@ main {
         font-weight: 500;
         color: var(--contact-p);
 
+        animation: showEmail 3s ease;
 }
 
+.contact-p:hover {
+    border-radius: .25rem;
+    outline: .25rem solid var(--contact-p);
+    outline-offset: .5rem;
+}
+
+@keyframes showEmail {
+    from {
+        opacity: 0;
+        scale: .8;
+    }
+}
 
 
 /*** 6. RESPONSIVE ***/
