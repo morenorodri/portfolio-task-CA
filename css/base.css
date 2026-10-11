@@ -46,7 +46,6 @@
 
 }
 
-
 #theme-toggle:checked ~ * {
     /* color theme */
     --surface:      #101019 ;
@@ -86,17 +85,20 @@
     /* contact */
     --contact-title: #F3F4F6;
     --contact-p:     #0A92CC;
-
     
+
     animation: showColors 0.5s ease;
 }
 
 @keyframes showColors {
-        from {
-            opacity: 0;
-        }
+    from {
+        opacity: 0;
     }
+}
 
+
+
+/* theme mode toggle */
 .toggle-label::after {
     content: "";
     width: 2rem; height: 2rem; 
@@ -112,6 +114,20 @@
 #theme-toggle {
     display: none;
 }
+
+
+
+/* stop the animation and transition */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: 0ms !important;
+    transition: 0ms !important;
+  }
+}
+
+
 
 
 /*** 2. RESET ***/
@@ -134,6 +150,20 @@ img { max-width: 100%; object-fit: cover; }
 a { text-decoration: none; }
 
 
+a:focus, button:focus, label:focus, details:focus {
+    outline: none;
+}  
+
+/* Keyboard navigation displays a clear outline */
+a:focus-visible, button:focus-visible, label:focus-visible, details:focus-visible {
+    border-radius: .25rem;
+    outline: .25rem solid var(--nav-link);
+    outline-offset: .5rem;
+}  
+
+
+
+
 
 /*** 3. ELEMENT ***/
 /* knowledge from the class */ /*
@@ -149,7 +179,7 @@ html {
 
 
 body {
-        /* standard font pack for the whole project */
+        /* standard pack for the whole project */
         font-family:        "Poppins", sans-serif;
         font-size:          1rem;
         font-weight:        300;
@@ -205,13 +235,18 @@ header {
 
 
     #drop-menu {
-        position: static;
         border: none;
         width: 100%;
         top: 4rem;
             background-color: var(--nav-menu);
+            position: static;
+            opacity: 0;
+            transition: opacity 0.3s, overlay 0.3s allow-discrete, display 0.3s allow-discrete;
     }
 
+    #drop-menu:popover-open {
+            opacity: 1;
+    }
 
     .drop-social-list {
         display: flex;
@@ -220,9 +255,6 @@ header {
         padding: 2rem;
     }
 }
-
-
-
 
 
 footer {
@@ -234,6 +266,7 @@ footer {
         padding: 2rem .5rem;
     }
 }
+
 
 
 
@@ -294,15 +327,12 @@ footer {
     }
 }
 
-.brand-link:focus-visible, a:focus-visible {
-    outline: .25rem solid #01660B;
-}
-
 
 /* buttons/img */
 .header-toggle-box button,
 .header-toggle-box label {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: .5rem;
     border: none;
@@ -316,6 +346,18 @@ footer {
         max-width: 2rem; max-height: 2rem;
     }
 }
+
+
+/* coder */
+.coder-mini-name {
+        background: linear-gradient(
+            45deg, #076D99, #009911
+        );
+        background-clip: text;
+        color: transparent;
+}
+
+
 
 
 
@@ -352,8 +394,13 @@ footer {
             display: none;
         }
 
+        #drop-menu {
+            display: none;
+        }
+
     }
 }
+
 
 /* mobile */
 @media only screen and (min-width: 26.5625rem) {

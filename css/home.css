@@ -17,6 +17,7 @@ main {
 
 
 
+
 /*** 5. FEATURING ***/
 /* title */
 .home-headline {
@@ -28,14 +29,14 @@ main {
 
 
 /* coder */
-.coder {
+.coder-name {
         background: linear-gradient(
             45deg, #076D99, #009911
         );
         background-clip: text;
         color: transparent;
 
-        animation: showName 3s ease;
+        animation: showName 3s ease-out;
 }
 
 @keyframes showName {
@@ -48,7 +49,6 @@ main {
 
 /* image */
 .home-profile {
-    /* border: .5rem solid var(--pic-frame); */
     border-radius: 50%;
     width: clamp(12rem, 20vw, 16rem);
     padding: clamp(.5rem, 1vw, 1rem);
@@ -59,11 +59,12 @@ main {
 
 
 
+
 /*** 6. RESPONSIVE ***/
 /* laptop */
 @media only screen and (min-width: 64rem) {
     main {
-
+ 
         .home-container {
             width: min(75%, 64rem);
         }
@@ -83,7 +84,6 @@ main {
 
     }
 }
-
 
 
 /* mobile */

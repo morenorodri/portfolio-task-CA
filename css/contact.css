@@ -17,6 +17,7 @@ main {
 
 
 
+
 /*** 5. FEATURING ***/
 /* title */
 .contact-title {
@@ -32,13 +33,7 @@ main {
         font-weight: 500;
         color: var(--contact-p);
 
-        animation: showEmail 3s ease;
-}
-
-.contact-p:hover {
-    border-radius: .25rem;
-    outline: .25rem solid var(--contact-p);
-    outline-offset: .5rem;
+        animation: showEmail 3s ease-out;
 }
 
 @keyframes showEmail {
@@ -47,6 +42,8 @@ main {
         scale: .8;
     }
 }
+
+
 
 
 /*** 6. RESPONSIVE ***/

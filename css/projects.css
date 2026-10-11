@@ -1,6 +1,6 @@
 /*** 4. BLOCK ***/
 main {
-    padding: 8rem 0;
+    padding: 4rem 0;
         background-color: var(--surface);
 
     .project-container {
@@ -32,6 +32,7 @@ main {
 
 
 
+
 /*** 5. FEATURING ***/
 /* title */
 .project-title {
@@ -58,7 +59,7 @@ main {
         transform: translateY(0rem);
         transition: transform 0.3s ease 0s;
 
-        animation: showCard 3s ease;
+        animation: showCard 3s ease-out;
 
     img {
         aspect-ratio: 16/9;
@@ -88,7 +89,6 @@ main {
         }
     }
 
-
     .card-links {
         display: flex;
         justify-content: space-between;
@@ -114,9 +114,10 @@ main {
 @keyframes showCard {
     from {
         opacity: 0;
-        transform: translateY(12rem);
+        transform: translateY(3rem);
     }
 }
+
 
 
 

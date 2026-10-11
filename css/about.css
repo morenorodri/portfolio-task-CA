@@ -1,6 +1,6 @@
 /*** 4. BLOCK ***/
 main {
-    padding: 8rem 0;
+    padding: 4rem 0;
         background-color: var(--surface);
 
     .about-container {
@@ -34,6 +34,7 @@ main {
 
 
 
+
 /*** 5. FEATURING ***/
 /* title */
 .about-title, h2 {
@@ -57,15 +58,31 @@ main {
     row-gap: 4rem;
 
     .task {
+        block-size: 0;
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
+        border-bottom: .25rem solid var(--about-p);
         border-radius: .5rem;
         overflow: hidden;
         height: auto;
             background-color: var(--about-list);
             
-       animation: showList 3s ease;
+       animation: showList 3s ease-out;
+    }
+
+    details::details-content {
+        opacity: 0;
+        height: 0;
+        transition: 
+            height .3s ease-out, 
+            opacity .3s ease-out, 
+            content-visibility .3s ease-out allow-discrete;
+    }
+
+    details[open]::details-content {
+        opacity: 1;
+        height: auto;
     }
 
     summary {
@@ -78,7 +95,7 @@ main {
     .task-top {
         display: flex;
         flex-direction: column;
-        row-gap: .25rem;
+        row-gap: 1rem;
         padding: 1rem 1rem;
 
         .task-title {
@@ -101,14 +118,14 @@ main {
     .task-details {
         display: flex;
         flex-direction: column;
-        row-gap: .25rem;
+        row-gap: .5rem;
         padding: 0 1rem;
     }
 
     .task-adress {
         display: flex;
         flex-direction: column;
-        row-gap: .25rem;
+        row-gap: .5rem;
 
         span {
             display: flex;
@@ -148,11 +165,13 @@ main {
 }
 
 @keyframes showList {
-        from {
-            opacity: 0;
-            transform: translatex(12rem);
-        }
+    from {
+        opacity: 0;
+        transform: translateX(3rem);
     }
+}
+
+
 
 
 /*** 6. RESPONSIVE ***/

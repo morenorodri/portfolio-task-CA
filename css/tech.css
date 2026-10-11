@@ -1,6 +1,6 @@
 /*** 4. BLOCK ***/
 main {
-    padding: 8rem 0;
+    padding: 4rem 0;
         background-color: var(--surface);
 
     .tech-container {
@@ -29,7 +29,7 @@ main {
             display: flex;
             padding: .5rem;
             border-radius: .25rem;
-            width: clamp(4.25rem, 15vw, 8.5rem); 
+            width: clamp(4.25rem, 15vw, 8.5rem);
                 background-color: var(--tech-bframe); 
             
             animation: showFrame 3s ease;
@@ -43,6 +43,7 @@ main {
         opacity: 0;
     }
 }
+
 
 
 
@@ -63,6 +64,7 @@ main {
         color: var(--tech-p);
 
 }
+
 
 
 
