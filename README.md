@@ -7,7 +7,7 @@ https://portfoliochastask.netlify.app/
 
 Reflektion: Portfolio
 
-Från skiss till kod
+Från skiss till kod:
 Min första reaktion på skissen var positivt och funderade på att lägga till svag grå färg på vissa element. Det för att tydliggöra vad vissa element är och dämpa den vita bakgrundsstyrkan för ögonen. Förespådde att listorna i About-sektionen skulle vara det mest utmanande av alla byggdelar. About-listan bedömde jag skulle behöva en hel del flexibilitet med flex. Pawans mobil-läge på 600px motsvarar mitt tablet-läge på mitt skrivbord. Skärmar kring 320px-läge är standarden för mobiler. Pawans layout-skiss skulle inte hålla strukturen utan istället riskera att elementen kolliderar eller överlappar varandra. 
 
 Innan kodbygget behövdes en samling av färg-variablerna i :root och ett gäng förinställningar i filen base.css. Denna fil ska vara tillgänglig för alla kommande HTML-filer eftersom de använder gemensamma element egenskaper för att forma och färga exempelvis header och footer. 
@@ -17,7 +17,7 @@ Kodbygget startades enligt mobile-first metoden. Det var en ovana för min del d
 
 
 
-Semantik
+Semantik:
 I början av min bekantskap med HTML hade jag tolkat taggarna som ett beskrivningsinnehåll. Det hjälpte även att lokalisera var i koden jag befann mig och dessutom var kodstrukturen enklare att förstå. Jag hade ingen aning om att strukturella taggar hade syftet att vägleda besökare som tar hjälp av skärmläsaren för att inte missa viktigt innehåll. 
 
 På varje sida i projekten finns header, navigation, main, article, section, footer, h1-h6, p och a samt button-element. Vanliga taggar som formar hemsidan i sin helhet. Längre in i arbetsuppgiften behövde jag byta ut en button mot en <input type=checkbox> på header för att ändra på färgtema på sidan. När det var dags att testa sidans navigation via tab-knappen, blev input-knappen aldrig markerad som de andra interaktiva element. Det tog ett tag att förstå att jag behövde lägga till ett attribut tabindex="0" på label som är kopplat ihop med input, för att ställa tillbaka den i flödet vid tangentbordsnavigation.
@@ -29,7 +29,7 @@ Annat som jag behöver lyfta fram är listorna på aboutsidan. Det är ett detai
 
 
 
-Layout
+Layout:
 Projektet utgick enligt mobile-first och många HTML-taggar var block-element, vilket innebär att elementen tar full bredd och gör så att elementen hamnar strax under varandra. Ju bredare skärmstorlek desto fler element kunde placeras på rad med hjälp av display: flex för att efterlikna skissen. 
 
 På projektsidan används grid för att placera korten efter grid-rutmönstret och göra dem responsiva. Grid är effektivt i responsiv design för att fylla önskade ytor med funktionen repeat(auto-fit, minmax()). Flex kan också fylla tomma ytor men när antalet är udda följer mönstret inte det jag är ute efter. Min bedömning är att flex är utmärkt för ett parent-element som styr sina child-element i en riktning. Däremot är grid bättre för mer komplexa rutmönster åt två riktningar, horisontellt och vertikalt.
@@ -39,7 +39,7 @@ Detta projekt hade tre brytpunkter för mobil-läge, surfplatta-läge och bärba
 
 
 
-Tillgänglihet
+Tillgänglihet:
 Jag har försökt underlätta för alla som besöker sidan och väljer att titta in i källkoden. 
 
 Sidan är responsiv och anpassar sig efter skärmstorlekar. Projektets brytpunkter är för mobilläge (425px), surfplatta (768px) och datorskärm (1024px).
@@ -68,7 +68,7 @@ När det gäller CSS kan det bli tufft om klasser inte har tydliga namn. Det gä
 
 
 
-AI-vertyg 
+AI-vertyg:
 Vid sidan om har jag haft god hjälp av AI som har förklarat för mig när jag har fastnat. Särskilt vid uppbyggnaden av details och summary-elementen på Aboutsidan och färgtemaväxlingen på sidorna och gett mig grundläggande kunskap inom animation. 
 
 Till detta projekt använde jag mig av Google Gemini som stöd och jag valde bort ChatGPT. Gemini förstod mina beskrivningar bättre och gav mig fler alternativa vägar till lösningar. ChatGPT var kortfattat och vägledde mig oftast ingenstans. Gemini var mer engagerat i utvecklingsprocessen.
