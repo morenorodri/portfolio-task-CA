@@ -36,7 +36,7 @@ main {
         background-clip: text;
         color: transparent;
 
-        animation: showName 3s ease-out;
+        animation: showName 6s ease-out;
 }
 
 @keyframes showName {
