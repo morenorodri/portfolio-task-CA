@@ -33,6 +33,12 @@ main {
         font-weight: 500;
         color: var(--contact-p);
 
+        &:hover {
+            outline: .25rem solid var(--contact-p);
+            outline-offset: .5rem;
+            border-radius: .25rem;
+        }
+
         animation: showEmail 3s ease-out;
 }
 

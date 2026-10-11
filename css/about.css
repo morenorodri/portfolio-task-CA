@@ -62,7 +62,7 @@ main {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
-        border-bottom: .25rem solid var(--about-p);
+        border-bottom: .25rem solid var(--ab-list-ps);
         border-radius: .5rem;
         overflow: hidden;
         height: auto;
